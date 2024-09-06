@@ -38,12 +38,14 @@ double findDistance() {
 
 // Perimeter
  double calculatePerimeter() {
-    double diameter = calculateDistance();
+    double diameter = findDistance();
     double perimeter = diameter * 3.14;
     printf("The perimeter of the city is %.2lf",perimeter,"\n\n");
     return 0;
    }
 
+// Area
+double 
 
 
  
