@@ -14,13 +14,13 @@ double findDistance() {
     double x1, y1, x2, y2;
     
     // Ask for inputs
-    printf("Enter the coordinates of the X in the first point: x1=");
+    x1= printf("Enter the coordinates of the X in the first point: x1=");
     scanf("%lf", &x1);
-    printf("Enter the coordinates of Y in the first point: y1=");
+    y1= printf("Enter the coordinates of Y in the first point: y1=");
     scanf("%lf", &y1);
-    printf("Enter the coordinates of the X in the second point: x1=");
+    x2= printf("Enter the coordinates of the X in the second point: x1=");
     scanf("%lf", &x2);
-    printf("Enter the coordinates of Y in the second point: y2=");
+    y2= printf("Enter the coordinates of Y in the second point: y2=");
     scanf("%lf", &y2);
 
     //double x1,y1, x2, y2 distance;?? is this needed?
@@ -36,7 +36,7 @@ double findDistance() {
     }
 // Perimeter
  double calculatePerimeter() {
-    double diameter = double x1 + double x2 + double y1 + double y2;
+    double diameter = x1+x2+y1+y2;
     double perimeter = diameter;
     printf("The perimeter of the city is %.2lf", perimeter,"\n\n");
     return 0;
