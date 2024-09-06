@@ -45,7 +45,6 @@ double findDistance() {
    }
 
 // Area
-double 
 
 
  
