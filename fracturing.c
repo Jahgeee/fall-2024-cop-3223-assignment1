@@ -39,22 +39,11 @@ double findDistance() {
 double findPerimeter() {
     
     double x1, y1, x2, y2;
-    
-    // Ask for inputs
-    printf("Enter the coordinates of the X in the first point: x1=");
-    scanf("%lf", &x1);
-    printf("Enter the coordinates of Y in the first point: y1=");
-    scanf("%lf", &y1);
-    printf("Enter the coordinates of the X in the second point: x1=");
-    scanf("%lf", &x2);
-    printf("Enter the coordinates of Y in the second point: y2=");
-    scanf("%lf", &y2);
-
     return x1+y1+x2+y2;
 }
 // Perimeter
  double calculatePerimeter() {
-    double perimeter = findPerimeter();
+    double perimeter = distance*3.14
     printf("The perimeter of the city is %.2d", perimeter,"\n\n");
 
     return 0;
