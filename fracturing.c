@@ -86,7 +86,7 @@ double calculateHeight() {
     printf("Enter the coordinates of Y in the second point: y2=");
     scanf("%lf", &y2);
 
-    double heigth = fabs(y2-y1);
+    double height = fabs(y2-y1);
     printf("The height of the city is: %.2f", height);
    
     return 0;
