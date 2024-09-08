@@ -42,7 +42,6 @@ double findDistance() {
     double diameter = findDistance();
     double perimeter = diameter * 3.14;
     printf("The perimeter of the city is %.2lf",perimeter,"\n\n");
-    scanf("%lf", &distance);
 
     return 0;
    }
@@ -51,8 +50,45 @@ double findDistance() {
 double calculateArea() {
     double radius = findDistance()/2;
     double area = 3.14 * pow(radius,2);
-    printf("The area of the city is: %.2f", area); 
-    scanf("%lf", &area)
+    printf("The area of the city is: %.2f", area);
+
+    return 0;
+}
+// Width
+double calculateWidth() {
+    double x1, y1, x2 ,y2;
+
+    printf("Enter the coordinates of the X in the first point: x1=");
+    scanf("%lf", &x1);
+    printf("Enter the coordinates of Y in the first point: y1=");
+    scanf("%lf", &y1);
+    printf("Enter the coordinates of the X in the second point: x1=");
+    scanf("%lf", &x2);
+    printf("Enter the coordinates of Y in the second point: y2=");
+    scanf("%lf", &y2);
+
+    double width = fabs(x2-x1);
+    printf("The width of the city is: %.2f", width);
+    
+    
+    return 0;
+}
+// Height
+double calculateHeight() {
+    double x1, y1, x2 ,y2;
+
+    printf("Enter the coordinates of the X in the first point: x1=");
+    scanf("%lf", &x1);
+    printf("Enter the coordinates of Y in the first point: y1=");
+    scanf("%lf", &y1);
+    printf("Enter the coordinates of the X in the second point: x1=");
+    scanf("%lf", &x2);
+    printf("Enter the coordinates of Y in the second point: y2=");
+    scanf("%lf", &y2);
+
+    double heigth = fabs(y2-y1);
+    printf("The height of the city is: %.2f", height);
+   
     return 0;
 }
 
@@ -67,6 +103,8 @@ int main()
     calculateDistance();
     calculatePerimeter();
     calculateArea();
+    calculateWidth();
+    calculateHeight();
 
     return 0;
 }
