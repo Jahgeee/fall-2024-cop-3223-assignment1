@@ -32,7 +32,6 @@ double findDistance() {
  double calculateDistance() {
     double distance= findDistance();
     printf("The distance between the 2 points: %.2lf",distance,"\n\n");
-    scanf("%lf", &distance);
     return distance;
 
     }
