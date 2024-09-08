@@ -32,13 +32,14 @@ double findDistance() {
  double calculateDistance() {
     double distance= findDistance();
     printf("The distance between the 2 points: %.2lf",distance,"\n\n");
+    scanf("%lf", &distance);
     return distance;
 
     }
 
 // Perimeter
  double calculatePerimeter() {
-    double diameter = findDistance();
+    double diameter = calculateDistance();
     double perimeter = diameter * 3.14;
     printf("The perimeter of the city is %.2lf",perimeter,"\n\n");
     return 0;
