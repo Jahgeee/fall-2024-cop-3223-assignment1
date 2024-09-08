@@ -32,6 +32,7 @@ double findDistance() {
  double calculateDistance() {
     double distance= findDistance();
     printf("The distance between the 2 points: %.2lf",distance,"\n\n");
+
     return distance;
 
     }
@@ -41,10 +42,19 @@ double findDistance() {
     double diameter = findDistance();
     double perimeter = diameter * 3.14;
     printf("The perimeter of the city is %.2lf",perimeter,"\n\n");
+    scanf("%lf", &distance);
+
     return 0;
    }
 
 // Area
+double calculateArea() {
+    double radius = findDistance()/2;
+    double area = 3.14 * pow(radius,2);
+    printf("The area of the city is: %.2f", area); 
+    scanf("%lf", &area)
+    return 0;
+}
 
 
  
@@ -56,6 +66,7 @@ int main()
 {
     calculateDistance();
     calculatePerimeter();
+    calculateArea();
 
     return 0;
 }
